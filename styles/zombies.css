@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --var-font-color: maroon
+}
+
+html {
+    background-color: rgba(210, 180, 140, 0.93);
+    background-image: url('../images/images-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Darumadrop One', cursive;
+    display: flex;
+    flex-direction: column;
+}
+/*---------------------------------------------------*/
+
+header {
+    display: flex;
+    position: relative;
+    border-bottom: 5px solid var(--var-font-color);
+}
+header img {
+    max-width: 150px;
+    margin: 2vh;
+    display: flex;
+}
+
+header h2 {
+    margin-right: auto;
+    font-size: 200%;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
+}
+
+/*---------------------------------------------------*/
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: var(--var-font-color);
+    top: 0;
+    right: 0;
+    width: 40vw;
+    margin: 2vh;
+}
+
+nav li {
+    margin-inline: 1vw;
+
+}
+
+nav a {
+    padding: 2vh 1vw;
+    display: block;
+    font-weight: bold;
+    font-variant: small-caps;
+    transition: all 300ms ease;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.803);
+    color: var(--var-font-color);
+}
+
+nav a:link, nav a:visited {
+    color: whitesmoke;
+}
+/*---------------------------------------------------*/
+
+aside {
+    flex: 0 1 500px;
+}
+
+aside h2 {
+    font-size: 150%;
+    padding-left: 8px;
+    margin-left: 8px;
+    text-decoration: underline;
+}
+
+aside p{
+    width: 75%;
+    padding-left: 15px;
+    margin-left: 15px;
+    padding-right: 15px;
+    font-style: italic;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    font-size: 100%;
+    
+}
+
+
+/*---------------------------------------------------*/
+
+main {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+}
+
+/*---------------------------------------------------*/
+
+section {
+    flex: 0 1 600px;
+}
+
+section div {
+    display: flex;
+}
+
+section div h2 {
+    text-decoration: underline;
+}
+
+section div h4 {
+    color: aliceblue;
+    padding-right: 5px;
+
+}
+
+
+
+section div img {
+   text-align: center;
+}
+
+
+section div p {
+    padding-left: 5px;
+    font-size: 130%;
+}
+
+
+
+/*---------------------------------------------------*/
+
+footer {
+    padding: 3vh 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 85%;
+}
+
+/*---------------------------------------------------*/
+
+#cornerBtn {
+    /*display: none !important;*/
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    background-color: var(--var-font-color);
+    color: black;
+    font-size: 110%;
+    font-weight: bold;
+    transition: all 300ms;
+    border-radius: 50%;
+}
+
+#cornerBtn:hover {
+    background-color: tan;
+    color: gold;
+    padding: 15px;
+}
+
+#Takeo, #Tank, #Nikolai, #Edward, #Crew {
+    border: 1px solid  var(--var-font-color);
+    position: relative;
+    padding-top: 25px;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+    box-shadow: 5px 5px 15px 10px #660000;
+}
+
+@media screen and (max-width: 767px) {
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside, section {
+        width: 95%;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header h2 {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #navigation {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 65vh;
+        height: 100vh;
+        background-color: rgba(137, 43, 226, 0.8);
+        transform: translateX(100%);
+        transition: all 300ms ease-in;
+        z-index: 99;
+    }
+
+    #navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    #showNavigation[data-visible='True'] {
+        background-image: url(../images/download.jpg);
+    }
+ 
+ 
+    nav ul {
+        flex-direction: column;
+        margin-top: 30vh;
+    }
+
+    nav li {
+        background-color: transparent;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    #showNavigation[data-visible="false"] {
+        display: block;
+    }
+}
+

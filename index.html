@@ -6,28 +6,94 @@
 
 
 
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Darumadrop+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/zombies.css">
 	
-	<!--[if lt IE 9]>
-    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-    <![endif]-->
-	
+    
 	<title>Call of Duty Zombies</title>
     </head>
     <body>
         <header>
-        <h1>Call of Duty Zombies</h1>
-		<h2>Under Construction</h2>
+            <a href="index.html"><img src="images/download.jpg" alt="Click Here for Home Page" title="Logo Image"></a> 
+        <h2>Home Page (Overview of Characters)</h2>
+        
+        
+        
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bo1.html">Black Ops 1</a></li>
+                <li><a href="bo2.html">Black Ops 2</a></li>
+                <li><a href="bo3.html">Black Ops 3</a></li>
+            </ul>
+        </nav>
         </header>
         
+       
+
         <main>
-            <p>My website will be oriented around a video game. This video game/video game mode is called call of duty zombies. What I will be implementing are tips and tricks, background information and special facts. I will create a different page in the "nav" for each so called "zombies map". Each of the information criteria I mentioned will have its own specifcs for each map.</p>
+            <aside>
+                <h2>Overview of Story (for Beginners)</h2>
+                <p>In the beginning, there were only the Aether and Keepers. Among them were two beings who would later be known by many names. One would be known as Doctor Monty, the other being as the Shadowman. In time, the Keepers crafted the Summoning Key, a device that allows them to manipulate the Aether. Holding power over reality itself, they used it to create Agartha. The Keepers later mastered the ability to travel between dimensions.
+    
+                    At some point, several Keepers, among which the Shadowman, began experimenting with the Dark Aether, an energy beneath creation. The Dark Aether corrupted and corroded their souls, and the corrupted Keepers became known as the Apothicons.
+                    
+                    The Apothicons created the Aether Pyramid, a device capable of absolute power. A schism formed between them and the Keepers untainted by the Dark Aether. Soon after, a war broke out between Apothicons and uncorrupted Keepers. Facing defeat, the Apothicons hid the Aether Pyramid on a moon within one of the newly discovered dimensions. After banishing the Apothicons to the Dark Aether, the remaining Keepers took on the mantle of Guardians. Trapped in the Dark Aether, the Apothicons evolved over eons into twisted creatures that now bear little resemblance to their Keeper brethren. They desired, above all else, to return to Agartha.
+                    
+                    By September 5 CE, the Apothicons, knowing the Earth has a gateway to Agartha, sent meteors containing Element 115 to the planet in different dimensions across space and time. They believe humanity will one day use Element 115 to wage war among themselves, opening a rift that will allow the Apothicons to escape the Dark Aether.</p>
+                </aside>
+                <section>
+                    <div id="Takeo">
+                        <h4>Takeo Masaki</h4>
+                        <img src="images/takeo.jpg" alt="" title="Pic 1">
+                        <p>A Japanese soldier who is often seen meditating and speaking in philosophical terms. Takeo is a skilled swordsman and is known for his calm and collected demeanor. He is often the voice of reason in the group and provides a level of balance to the otherwise chaotic situation.</p>
+                    </div>
+                    
+                    <div id="Tank">
+                    <h4>Tank Dempsey</h4>
+                        <img src="images/tank.jpg" alt="" title="Pic 2">
+                        <p>A US Marine who is known for his tough and no-nonsense personality. He is often the leader of the group and is willing to take charge in any situation. Tank is known for his heavy use of weapons and is a skilled soldier who has seen combat in several different countries.</p>
+                    </div>
+                
+                    <div id="Nikolai">
+                    <h4>Nikolai Belinski</h4>
+                        <img src="images/nikolai.jpg" alt="" title="Pic 3">
+                        <p>A Russian soldier who is often seen drinking vodka and making sarcastic remarks. He is a skilled fighter who is known for his love of explosives and his ability to hold his own in combat. Nikolai often provides comic relief in the game, but he is also a valuable member of the team.</p>
+                    </div>
+                    
+                   <div id="Edward">
+                    <h4>Edward Richtofen</h4>
+                        <img src="images/richtofen.jpg" alt="" title="Pic 4">
+                        <p>A German scientist who is often seen as the main antagonist of the game. Richtofen is known for his twisted experiments and his desire for power. He is often manipulative and cunning, and his true motives are often unclear.</p>
+                    </div>
+                    
+                   
+
+                <div><button onclick="topFunction()" id="cornerBtn" title="Go to top"><i class="fa-duotone fa-angle-up"></i></button></div>
+                
+
+                
+                </section>
+            
+            
         </main>
     
+        
         <footer>
-
+            <p><a href="https://www.contactus.com">Contact Us</a></p>
+            <p>&copy; <span id="copyright"></span> Teo Berbic</p>
+            
+    
         </footer>
+
+        <script src="js/zombies.js"></script>
+       
    
 </body>
     </html>

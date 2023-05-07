@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Darumadrop+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/zombies.css">
+    <link rel="stylesheet" href="styles/bo2.css">
+    <title>Black Ops 2 Map Slideshow</title>
+</head>
+<body>
+    <header>
+
+        <a href="index.html"><img src="images/blackops2/download.jpg" alt="click here to return to home page" title="Click Here"></a>
+        <h2>Black Ops 2 Map Slideshow</h2>
+           
+            <nav id="navigation" data-visible="false">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bo1.html">Black Ops 1</a></li>
+                    <li><a href="bo2.html">Black Ops 2</a></li>
+                    <li><a href="bo3.html">Black Ops 3</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="images/blackops2/buried.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/blackops2/dierise.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/blackops2/town.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/blackops2/origins.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/blackops2/nuketown2.jpg" alt=""></div>
+                <div class="prev" onclick= "showImage(1)"><i class="fa-solid fa-forward"></i></div>
+                <div class="next" onclick= "showImage(-1)"><i class="fa-solid fa-backward"></i></div>
+            </div> 
+        </div>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <p><h2>Names of the Maps</h2></p>
+        <ul>
+            <li><a href="https://www.ign.com/wikis/call-of-duty-black-ops-2/Buried" target="_blank">Buried</a></li>
+            <li><a href="https://www.ign.com/wikis/call-of-duty-black-ops-2/Die_Rise" target="_blank">Die Rise</a></li>
+            <li><a href="https://www.ign.com/wikis/call-of-duty-black-ops-2/Green_Run_-_Town" target="_blank">Town</a></li>
+            <li><a href="https://www.ign.com/wikis/call-of-duty-black-ops-2/Origins" target="_blank">Origins</a></li>
+            <li><a href="https://www.ign.com/wikis/call-of-duty-black-ops-2/Nuketown_Zombies" target="_blank">Nuketown</a></li>
+        </ul>
+
+        <div><button onclick="topFunction()" id="cornerBtn" title="Go to top"><i class="fa-duotone fa-angle-up"></i></button></div>
+                
+        <h1 class="dis">Disclaimer!</h1>
+                <div class="container mt-3">
+                    <div class="mt-4 p-5 bg-primary text-warning rounded">
+                      <h1 id="displaytimer"></h1> 
+                      
+                      <h1 class="nuke">Until Nuketown Blows up!</h1>
+                    </div>
+                  </div>
+
+
+    </main>
+    <footer>
+        <p><a href="https://www.contactus.com">Contact Us</a></p>
+        <p>&copy; <span id="copyright"></span> Teo Berbic</p>
+
+    </footer>
+    <script src="js/zombies.js"></script>
+</body>
+</html>

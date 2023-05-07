@@ -1,0 +1,161 @@
+
+body {
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a:visited {
+    color: azure;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagecarousel {
+    position: relative;
+}
+
+.image {
+    display: none;
+}
+
+.image:first-of-type {
+    display: block;
+}
+
+.image img {
+    border-radius: 5px;
+    max-height: 2500px;
+    min-height: 250px;
+}
+
+.prev, .next {
+    position: absolute;
+    font-size: 150%;
+    color: antiquewhite;
+    top: 50%;
+    background-color: rgba(114, 99, 99, 0.343);
+    transform: translateY(-50%);
+    padding: 2vh;
+    transition: all 400ms ease;
+
+}
+
+.next {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.prev {
+    right: 0;
+    border-radius: 5 0px 0px 5;
+}
+
+.prev:hover, .next:hover {
+    background-color: maroon;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.dots {
+    display: flex;
+    gap: .5vw;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgba(172, 154, 154, 0.34);
+}
+
+.active {
+    background-color:  rgba(172, 154, 154, 1);
+}
+
+.container mt-3 {
+    text-align: center;
+}
+
+.nuke, .dis {
+    text-align: center;
+    color: maroon;
+}
+
+@media screen and (max-width: 767px) {
+    .image img {
+        border-radius: 5px;
+        max-height: 1500px;
+        max-width: 400px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagecarousel {
+        position: relative;
+        max-width: 400px;
+    }
+
+    .next {
+        left: 0;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .prev {
+        right: 0;
+        border-radius: 5 0px 0px 5;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .image img {
+        border-radius: 5px;
+        max-height: 1500px;
+        max-width: 300px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagecarousel {
+        position: relative;
+        max-width: 300px;
+    }
+
+    .next {
+        left: 0;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .prev {
+        right: 0;
+        border-radius: 5 0px 0px 5;
+    }
+}
+
+
